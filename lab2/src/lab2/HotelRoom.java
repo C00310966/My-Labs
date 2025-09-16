@@ -5,10 +5,20 @@ public class HotelRoom
 	
 	private int roomNumber;
 	private String roomType;
+	private int vacancy;
+	private double rate;
 	
 	public HotelRoom() //Constructor method
 	{
 		
+	}
+	
+	public HotelRoom(int num, String type, int number, double cost )
+	{
+		setNumber(num);
+		setType(type);
+		setVacancy(number);
+		setRate(cost);
 	}
 	
 	public void setNumber(int num) //Setter method
@@ -31,4 +41,31 @@ public class HotelRoom
 		return roomType;
 	}
 	
+	public void setVacancy (int number)
+	{
+		vacancy = number;
+	}
+	
+	public String getVacancy()
+	{
+		if (vacancy == 0)
+		{
+			return "Vacant";
+		}
+		else if (vacancy == 1)
+		{
+			return "Occupied";
+		}
+		return null;
+	}
+	
+	public void setRate (double cost) 
+	{
+		rate = cost;
+	}
+	
+	public double getRate()
+	{
+		return rate;
+	}
 }
