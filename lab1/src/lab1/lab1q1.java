@@ -1,6 +1,9 @@
 package lab1;
 
 public class lab1q1 {
+//Name: Cian Howard
+//Student Number: C00310966
+//Date: 16/09/2025
 
 	public static void main(String args[]) 
 	{ 
