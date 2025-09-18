@@ -6,6 +6,7 @@ public class HotelRoom
 	private int roomNumber;
 	private String roomType;
 	private int vacancy;
+	private Boolean vacancyStatus;
 	private double rate;
 	
 	public HotelRoom() //Constructor method
@@ -41,9 +42,23 @@ public class HotelRoom
 		return roomType;
 	}
 	
-	public void setVacancy (int number)
+	public Boolean isOccupied()
 	{
-		vacancy = number;
+		if (vacancyStatus == True) 
+		{
+			return False;	
+		}
+		else if (vacancy == 1)
+		{
+			return True;
+			setVacancy()
+		}
+	}
+	
+	
+	public void setVacancy (boolean roomVacancy)
+	{
+		vacancyStatus = roomVacancy;
 	}
 	
 	public String getVacancy()
