@@ -5,8 +5,8 @@ public class HotelRoom
 	
 	private int roomNumber;
 	private String roomType;
-	private int vacancy;
-	private Boolean vacancyStatus;
+	//private int vacancy;
+	private boolean vacancy;
 	private double rate;
 	
 	public HotelRoom() //Constructor method
@@ -14,11 +14,11 @@ public class HotelRoom
 		
 	}
 	
-	public HotelRoom(int num, String type, int number, double cost )
+	public HotelRoom(int num, String type, boolean vacancy, double cost )//constructor method which takes 4 arguments 
 	{
 		setNumber(num);
 		setType(type);
-		setVacancy(number);
+		setVacancy(vacancy);
 		setRate(cost);
 	}
 	
@@ -42,23 +42,33 @@ public class HotelRoom
 		return roomType;
 	}
 	
-	public Boolean isOccupied()
+	public void isOccupied() //checks for room vacancy, if vacancy is true returns output of room occupied, if not occupied sets to occupied
 	{
-		if (vacancyStatus == True) 
+		if (vacancy) 
 		{
-			return False;	
+			System.out.println("This room is occupied");	
 		}
-		else if (vacancy == 1)
+		else
 		{
-			return True;
-			setVacancy()
+			setVacancy(true);
+			System.out.println("This room is now occupied");
 		}
 	}
 	
-	
-	public void setVacancy (boolean roomVacancy)
+	public void setVacancy (boolean vacant)
 	{
-		vacancyStatus = roomVacancy;
+		vacancy = vacant;
+	}
+	
+	public boolean getVacancy ()
+	{
+		return vacancy;
+	}
+
+	
+/*public void setVacancy (int vacant)
+	{
+		vacancy = vacant;
 	}
 	
 	public String getVacancy()
@@ -72,7 +82,7 @@ public class HotelRoom
 			return "Occupied";
 		}
 		return null;
-	}
+	}*/
 	
 	public void setRate (double cost) 
 	{
