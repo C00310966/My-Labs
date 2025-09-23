@@ -16,14 +16,15 @@ public class lab2aq3 {
 		
 		roomB.setNumber(201);
 		roomB.setType("Double");
-		roomB.setVacancy(0);
+		roomB.setVacancy(1);
 		roomB.setRate(80);
 		
 		
 		
 		System.out.println("Room A: room number is " + roomA.getNumber() + ", room type is " + roomA.getType() + ", room is " + roomA.getVacancy() + " and the cost is "+ roomA.getRate() );
 		System.out.println("Room B: room number is " + roomB.getNumber() + ",  room type is " + roomB.getType() + ", room is " + roomB.getVacancy() + " and the cost is "+ roomB.getRate() );
-		System.out.print("Room C: room number is " + roomC.getNumber() + ",  room type is " + roomC.getType() + ", room is " + roomC.getVacancy() + " and the cost is "+ roomC.getRate() );
+		System.out.println("Room C: room number is " + roomC.getNumber() + ",  room type is " + roomC.getType() + ", room is " + roomC.getVacancy() + " and the cost is "+ roomC.getRate() );
+		
 	}
 	
 }
