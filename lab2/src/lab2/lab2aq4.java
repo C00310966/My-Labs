@@ -26,7 +26,7 @@ public class lab2aq4 {
 		System.out.println("Room C: room number is " + roomC.getNumber() + ",  room type is " + roomC.getType() + ", room is " + roomC.getVacancy() + " and the cost is "+ roomC.getRate() );
 		//prints out the values of each variable in the object
 		
-		roomB.isOccupied(); //Checks if roomB is occupied
+		roomB.isOccupied(); //Checks if roomB is occupied 
 	}
 
 }
