@@ -71,13 +71,13 @@ public class Rectangle {
 		for (int col = 0; col < width; col++)
 		{
 			rectangle[0][col] = '*'; //every column in the first row becomes *, i.e. top width
-			rectangle[length-1][col] = '*';
+			rectangle[length-1][col] = '*'; //every column in the last row becomes *, i.e. bottow width
 		}
 		
 		for (int row = 0; row < length; row++)
 		{
-			rectangle[row][0] = '*'; //every row  in the first column becomes *, i.e. left length
-			rectangle[row][width-1] = '*';
+			rectangle[row][0] = '*'; //every row in the first column becomes *, i.e. left length
+			rectangle[row][width-1] = '*';//every row in the first column becomes *, i.e. right length
 		}
 		/*
 		for (int row = 0; row < length - 1; row++)
@@ -93,7 +93,6 @@ public class Rectangle {
 		
 		for (int row = 0; row < length; row++)
 		{
-			
 			for (int col = 0; col < width; col++)
 			{
 				System.out.print(rectangle[row][col]); 
