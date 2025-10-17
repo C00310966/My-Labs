@@ -5,7 +5,7 @@ public class Address{
 	private String city;
 	private String county;
 	
-	public Address(String street, String city, String county) {
+	public Address(String street, String city, String county) { //creates an address object that stores an employees address
 		this.street = street;
 		this.city = city;
 		this.county = county;
